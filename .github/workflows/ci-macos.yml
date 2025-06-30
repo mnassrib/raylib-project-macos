@@ -1,0 +1,37 @@
+name: CI macOS - Build Raylib Project
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: macos-latest
+
+    steps:
+      - name: Cloner le dépôt
+        uses: actions/checkout@v3
+
+      - name: Installer les dépendances nécessaires
+        run: |
+          brew install cmake raylib
+
+      - name: Créer le dossier build
+        run: mkdir build
+
+      - name: Configurer le projet avec CMake
+        run: cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
+
+      - name: Compiler le projet
+        run: cmake --build build --config Release
+
+      - name: Vérifier si l'exécutable a été généré
+        run: |
+          ls -l build
+          test -f build/raylib_project && echo "Exécutable trouvé" || (echo "Exécutable manquant" && exit 1)
+
+      # Attention : lancer un exécutable graphique en CI peut échouer
+      # - name: Test de l'exécutable (optionnel)
+      #   run: ./build/raylib_project
