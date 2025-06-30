@@ -1,39 +1,42 @@
-### 📄 `README.md`
-
 ```markdown
-# 🎮 Raylib Project
+# 🎮 Raylib Project (macOS)
 
-Un petit projet en C utilisant [Raylib](https://www.raylib.com/) pour l’affichage graphique, structuré avec CMake.
+Ce projet est une démonstration simple de l'utilisation de [Raylib](https://www.raylib.com/) en C, avec une structure propre basée sur CMake. Il est conçu pour être compilé nativement sur **macOS**, avec prise en charge de l’intégration continue via GitHub Actions.
+
+---
 
 ## 📁 Structure du projet
 
 ```
 
-raylib-project-macos/
-├── CMakeLists.txt           # Configuration du projet CMake
-├── src/                     # Code source
+raylib-project/
+├── CMakeLists.txt           # Fichier racine CMake
+├── src/                     # Code source C
 │   ├── main.c
 │   ├── player.c
 │   └── utils.c
-├── include/                 # Fichiers d’en-tête
+├── include/                 # Fichiers d'en-tête
 │   ├── player.h
 │   └── utils.h
-├── build/                   # Répertoire de compilation (généré)
+├── build/                   # Répertoire généré pour la compilation
 └── .github/
 └── workflows/
-└── ci-macos.yml     # Intégration continue GitHub Actions (macOS)
+└── ci-macos.yml     # GitHub Actions pour macOS
 
 ````
 
-## ⚙️ Compilation
+---
+
+## ⚙️ Compilation sur macOS
 
 ### 📌 Prérequis
 
-- CMake ≥ 3.10
-- Un compilateur C (GCC, Clang, etc.)
-- Raylib installé sur le système
+- [Homebrew](https://brew.sh) installé
+- Raylib installé (`brew install raylib`)
+- CMake installé (`brew install cmake`)
+- Un compilateur C (Clang, fourni par macOS)
 
-### 🚀 Instructions
+### 🚀 Étapes de compilation
 
 ```bash
 # Cloner le projet
@@ -49,23 +52,30 @@ cmake ..
 # Compiler
 make
 
-# Exécuter
+# Exécuter le programme
 ./raylib_project
 ````
 
-## ✅ Intégration continue
+---
 
-Ce projet est compilé automatiquement à chaque push sur macOS grâce à [GitHub Actions](https://github.com/features/actions).
+## ✅ Intégration Continue
+
+Ce projet est compilé automatiquement à chaque push sur `main`, grâce à [GitHub Actions](https://github.com/features/actions), en environnement macOS :
 
 ![CI Status](https://github.com/votre-utilisateur/raylib-project/actions/workflows/ci-macos.yml/badge.svg)
 
-## 🧠 Ressources utiles
+---
 
-* [Raylib - Site officiel](https://www.raylib.com/)
-* [Tutoriel VSCode, GCC et CMake (PDF)](https://inseecadmin-my.sharepoint.com/:b:/g/personal/bmnassri_ece_fr/EYsX4UbujQFEnU_6CAIs-ZQBT2R4GEw91A9mLdoQ6OxT7w?e=02gp4M)
+## 🧠 Ressources
+
+* [Site officiel de Raylib](https://www.raylib.com/)
+* [Documentation CMake](https://cmake.org/documentation/)
+* [Tutoriel : Configurer un environnement C multiplateforme](https://inseecadmin-my.sharepoint.com/:b:/g/personal/bmnassri_ece_fr/EYsX4UbujQFEnU_6CAIs-ZQBT2R4GEw91A9mLdoQ6OxT7w?e=02gp4M)
+
+---
 
 ## 📄 Licence
 
-Ce projet est librement réutilisable à des fins pédagogiques.
+Projet librement utilisable à des fins pédagogiques.
 
 ```
