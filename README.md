@@ -9,7 +9,7 @@ Ce projet est une démonstration simple de l'utilisation de [Raylib](https://www
 
 ```
 
-raylib-project/
+raylib-project-macos/
 ├── CMakeLists.txt           # Fichier racine CMake
 ├── src/                     # Code source C
 │   ├── main.c
@@ -40,7 +40,7 @@ raylib-project/
 
 ```bash
 # Cloner le projet
-git clone https://github.com/votre-utilisateur/raylib-project.git
+git clone https://github.com/mnassrib/raylib-project-macos.git
 cd raylib-project
 
 # Créer un dossier de build
@@ -62,7 +62,7 @@ make
 
 Ce projet est compilé automatiquement à chaque push sur `main`, grâce à [GitHub Actions](https://github.com/features/actions), en environnement macOS :
 
-![CI Status](https://github.com/votre-utilisateur/raylib-project/actions/workflows/ci-macos.yml/badge.svg)
+![CI Status](https://github.com/mnassrib/raylib-project-macos/actions/workflows/ci-macos.yml/badge.svg)
 
 ---
 
@@ -70,7 +70,6 @@ Ce projet est compilé automatiquement à chaque push sur `main`, grâce à [Git
 
 * [Site officiel de Raylib](https://www.raylib.com/)
 * [Documentation CMake](https://cmake.org/documentation/)
-* [Tutoriel : Configurer un environnement C multiplateforme](https://inseecadmin-my.sharepoint.com/:b:/g/personal/bmnassri_ece_fr/EYsX4UbujQFEnU_6CAIs-ZQBT2R4GEw91A9mLdoQ6OxT7w?e=02gp4M)
 
 ---
 
