@@ -31,6 +31,9 @@ jobs:
         run: |
           ls -l build
           test -f build/raylib_project && echo "Exécutable trouvé" || (echo "Exécutable manquant" && exit 1)
+      
+      - name: (Optionnel) Lister le contenu du build/
+        run: ls -lh build
 
       # Attention : lancer un exécutable graphique en CI peut échouer
       # - name: Test de l'exécutable (optionnel)
