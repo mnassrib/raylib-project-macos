@@ -1,4 +1,4 @@
-```markdown
+
 # 🎮 Raylib Project (macOS)
 
 Ce projet est une démonstration simple de l'utilisation de [Raylib](https://www.raylib.com/) en C, avec une structure propre basée sur CMake. Il est conçu pour être compilé nativement sur **macOS**, avec prise en charge de l’intégration continue via GitHub Actions.
@@ -77,5 +77,3 @@ Ce projet est compilé automatiquement à chaque push sur `main`, grâce à [Git
 ## 📄 Licence
 
 Projet librement utilisable à des fins pédagogiques.
-
-```
