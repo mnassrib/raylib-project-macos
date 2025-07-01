@@ -20,8 +20,8 @@ raylib-project-macos/
 │   └── utils.h
 ├── build/                   # Répertoire généré pour la compilation
 └── .github/
-└── workflows/
-└── ci-macos.yml     # GitHub Actions pour macOS
+    └── workflows/
+        └── ci-macos.yml     # GitHub Actions pour macOS
 
 ````
 
