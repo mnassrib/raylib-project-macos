@@ -12,8 +12,8 @@ find_package(raylib REQUIRED)
 # Sources du projet
 add_executable(${PROJECT_NAME}
     src/main.c
-    src/player.c
-    src/utils.c
+    src/players.c
+    src/utilss.c
 )
 
 # Lier Raylib + lib mathématique
