@@ -12,9 +12,9 @@ include_directories(include)
 
 # Ajoute les fichiers source
 add_executable(${PROJECT_NAME}
-    main.c
-    player.c
-    utils.c
+    src/main.c
+    src/player.c
+    src/utils.c
 )
 
 # --- Trouver Raylib et lier selon l'OS ---
