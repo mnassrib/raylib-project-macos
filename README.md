@@ -35,9 +35,9 @@ Assurez-vous que les outils suivants sont installés :
 - [Xcode Command Line Tools](https://developer.apple.com/xcode/)  
   → Installe `clang`, `make`, etc.  
   → Commande :
-  ```bash
+```bash
   xcode-select --install
-````
+```
 
 * [Homebrew](https://brew.sh) (si non installé) :
 
