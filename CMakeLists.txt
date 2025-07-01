@@ -17,4 +17,4 @@ add_executable(${PROJECT_NAME}
 )
 
 # Lier Raylib + lib mathématique
-target_link_libraries(${PROJECT_NAME} raylib m)
+target_link_libraries(${PROJECT_NAME} raylib)
