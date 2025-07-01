@@ -1,4 +1,3 @@
-
 # 🎮 Raylib Project (macOS)
 
 Ce projet est une démonstration simple de l'utilisation de [Raylib](https://www.raylib.com/) en C, avec une structure propre basée sur CMake. Il est conçu pour être compilé nativement sur **macOS**, avec prise en charge de l’intégration continue via GitHub Actions.
@@ -27,21 +26,39 @@ raylib-project-macos/
 
 ---
 
-## ⚙️ Compilation sur macOS
+## ⚙️ Compilation sous macOS
 
 ### 📌 Prérequis
 
-- [Homebrew](https://brew.sh) installé
-- Raylib installé (`brew install raylib`)
-- CMake installé (`brew install cmake`)
-- Un compilateur C (Clang, fourni par macOS)
+Assurez-vous que les outils suivants sont installés :
 
-### 🚀 Étapes de compilation
+- [Xcode Command Line Tools](https://developer.apple.com/xcode/)  
+  → Installe `clang`, `make`, etc.  
+  → Commande :
+  ```bash
+  xcode-select --install
+````
+
+* [Homebrew](https://brew.sh) (si non installé) :
+
+  ```bash
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  ```
+
+* Raylib et CMake via Homebrew :
+
+  ```bash
+  brew install cmake raylib
+  ```
+
+---
+
+## 🚀 Compilation du projet
 
 ```bash
-# Cloner le projet
+# Cloner ce dépôt
 git clone https://github.com/mnassrib/raylib-project-macos.git
-cd raylib-project
+cd raylib-project-macos
 
 # Créer un dossier de build
 mkdir build && cd build
@@ -52,27 +69,28 @@ cmake ..
 # Compiler
 make
 
-# Exécuter le programme
+# Lancer l’exécutable
 ./raylib_project
-````
+```
 
 ---
 
 ## ✅ Intégration Continue
 
-Ce projet est compilé automatiquement à chaque push sur `main`, grâce à [GitHub Actions](https://github.com/features/actions), en environnement macOS :
+Ce projet est compilé automatiquement à chaque `push` sur **macOS** via GitHub Actions :
 
 ![CI Status](https://github.com/mnassrib/raylib-project-macos/actions/workflows/ci-macos.yml/badge.svg)
 
 ---
 
-## 🧠 Ressources
+## 🧠 Ressources utiles
 
-* [Site officiel de Raylib](https://www.raylib.com/)
-* [Documentation CMake](https://cmake.org/documentation/)
+* [Raylib – Documentation](https://www.raylib.com/)
+* [CMake – Documentation](https://cmake.org/documentation/)
+* [Homebrew – Package manager pour macOS](https://brew.sh)
 
 ---
 
 ## 📄 Licence
 
-Projet librement utilisable à des fins pédagogiques.
+Ce projet est librement utilisable à des fins pédagogiques et de formation.
