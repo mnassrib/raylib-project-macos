@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.10)
 
 # Déclare le projet C en spécifiant le nom
-project(raylib_modular C)
+project(raylib_project C)
 
 # Utiliser le standard C99 (obligatoire pour Raylib)
 set(CMAKE_C_STANDARD 99)
