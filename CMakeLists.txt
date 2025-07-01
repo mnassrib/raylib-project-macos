@@ -1,20 +1,23 @@
 cmake_minimum_required(VERSION 3.10)
-project(raylib_project C)
 
+project(raylib_modular C)
+
+# Spécifie le standard C
 set(CMAKE_C_STANDARD 99)
+set(CMAKE_C_STANDARD_REQUIRED ON)
 
-# Inclure les headers
-include_directories(include)
-
-# Trouver Raylib installée sur le système
+# Trouve la bibliothèque Raylib installée sur le système
 find_package(raylib REQUIRED)
 
-# Sources du projet
+# Inclut les headers personnalisés du projet
+include_directories(include)
+
+# Ajoute les fichiers source
 add_executable(${PROJECT_NAME}
-    src/main.c
-    src/player.c
-    src/utils.c
+    main.c
+    player.c
+    utils.c
 )
 
-# Lier Raylib + lib mathématique
+# Lie l'exécutable aux bibliothèques nécessaires
 target_link_libraries(${PROJECT_NAME} raylib)
