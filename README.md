@@ -9,18 +9,18 @@ Ce projet est une démonstration simple de l'utilisation de [Raylib](https://www
 ```
 
 raylib-project-macos/
-├── CMakeLists.txt           # Fichier racine CMake
-├── src/                     # Code source C
+├── CMakeLists.txt           # Configuration du projet (CMake)
+├── src/                     # Fichiers source (.c)
 │   ├── main.c
 │   ├── player.c
 │   └── utils.c
-├── include/                 # Fichiers d'en-tête
+├── include/                 # Fichiers d’en-tête (.h)
 │   ├── player.h
 │   └── utils.h
-├── build/                   # Répertoire généré pour la compilation
+├── build/                   # Dossier de compilation (généré)
 └── .github/
     └── workflows/
-        └── ci-macos.yml     # GitHub Actions pour macOS
+        └── ci-macos.yml     # GitHub Actions (macOS)
 
 ````
 
