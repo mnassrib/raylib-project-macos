@@ -70,7 +70,7 @@ cmake ..
 make
 
 # Lancer l’exécutable
-./raylib_project
+./raylib-project-macos
 ```
 
 ---
